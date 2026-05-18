@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>960</width><height>640</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>Личный Календарь</string>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QMainWindow { background-color: #1e1e2e; }
+    QTabWidget::pane { border: none; background: #1e1e2e; }
+    QTabBar::tab {
+      background: #2a2a3e;
+      color: #aaa;
+      padding: 10px 24px;
+      font-size: 14px;
+      border: none;
+      margin-right: 2px;
+    }
+    QTabBar::tab:selected {
+      background: #3d5a80;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px 4px 0 0;
+    }
+    QTableView {
+      background: #252535;
+      color: #e0e0e0;
+      gridline-color: #3a3a4a;
+      font-size: 13px;
+      selection-background-color: #3d5a80;
+      border: 1px solid #3a3a4a;
+      border-radius: 6px;
+    }
+    QHeaderView::section {
+      background: #2a2a3e;
+      color: #aaa;
+      padding: 6px;
+      border: none;
+      font-size: 13px;
+    }
+    QPushButton {
+      background: #3d5a80;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 13px;
+      min-width: 120px;
+    }
+    QPushButton:hover  { background: #4d6a90; }
+    QPushButton:pressed{ background: #2d4a70; }
+    QStatusBar { color: #888; background: #1e1e2e; font-size: 12px; }
+    QLabel { color: #e0e0e0; }
+   </string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin"><number>0</number></property>
+    <property name="topMargin"><number>0</number></property>
+    <property name="rightMargin"><number>0</number></property>
+    <property name="bottomMargin"><number>0</number></property>
+    <property name="spacing"><number>0</number></property>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+
+      <!-- Категории -->
+      <widget class="QWidget" name="tabCategories">
+       <attribute name="title"><string>Категории</string></attribute>
+       <layout class="QVBoxLayout" name="categoriesLayout">
+        <property name="leftMargin"><number>16</number></property>
+        <property name="topMargin"><number>12</number></property>
+        <property name="rightMargin"><number>16</number></property>
+        <property name="bottomMargin"><number>12</number></property>
+        <property name="spacing"><number>10</number></property>
+
+        <item>
+         <widget class="QLabel" name="catTitleLabel">
+          <property name="text">
+           <string>Категории событий</string>
+          </property>
+          <property name="styleSheet">
+           <string>font-size:20px; font-weight:bold; color:#98c1d9; padding:4px 0px;</string>
+          </property>
+         </widget>
+        </item>
+
+        <item>
+         <widget class="QTableView" name="categoriesTableView">
+          <property name="alternatingRowColors"><bool>true</bool></property>
+          <property name="styleSheet">
+           <string>QTableView { alternate-background-color: #2d2d42; }</string>
+          </property>
+         </widget>
+        </item>
+
+        <item>
+         <layout class="QHBoxLayout" name="catButtonsLayout">
+          <property name="spacing"><number>10</number></property>
+          <item>
+           <widget class="QPushButton" name="addCategoryBtn">
+            <property name="text"><string>＋  Добавить</string></property>
+            <property name="styleSheet">
+             <string>background:#2ecc71; color:white; font-weight:bold;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="editCategoryBtn">
+            <property name="text"><string>✎  Изменить</string></property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="deleteCategoryBtn">
+            <property name="text"><string>✕  Удалить</string></property>
+            <property name="styleSheet">
+             <string>background:#e74c3c; color:white; font-weight:bold;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer>
+            <property name="orientation"><enum>Qt::Horizontal</enum></property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+
+      <!-- События -->
+      <widget class="QWidget" name="tabEvents">
+       <attribute name="title"><string>События</string></attribute>
+       <layout class="QVBoxLayout" name="eventsLayout">
+        <property name="leftMargin"><number>16</number></property>
+        <property name="topMargin"><number>12</number></property>
+        <property name="rightMargin"><number>16</number></property>
+        <property name="bottomMargin"><number>12</number></property>
+        <property name="spacing"><number>10</number></property>
+
+        <item>
+         <widget class="QLabel" name="evtTitleLabel">
+          <property name="text">
+           <string>События и задачи</string>
+          </property>
+          <property name="styleSheet">
+           <string>font-size:20px; font-weight:bold; color:#e9c46a; padding:4px 0px;</string>
+          </property>
+         </widget>
+        </item>
+
+        <item>
+         <widget class="QTableView" name="eventsTableView">
+          <property name="alternatingRowColors"><bool>true</bool></property>
+          <property name="styleSheet">
+           <string>QTableView { alternate-background-color: #2d2d42; }</string>
+          </property>
+         </widget>
+        </item>
+
+        <item>
+         <widget class="QLabel" name="eventTagsLabel">
+          <property name="text">
+           <string>Теги выбранного события: —</string>
+          </property>
+          <property name="styleSheet">
+           <string>
+            background:#1a3a5c;
+            border:1px solid #3d5a80;
+            padding:8px 12px;
+            border-radius:6px;
+            color:#98c1d9;
+            font-size:13px;
+           </string>
+          </property>
+         </widget>
+        </item>
+
+        <item>
+         <layout class="QHBoxLayout" name="evtButtonsLayout">
+          <property name="spacing"><number>10</number></property>
+          <item>
+           <widget class="QPushButton" name="addEventBtn">
+            <property name="text"><string>＋  Добавить</string></property>
+            <property name="styleSheet">
+             <string>background:#2ecc71; color:white; font-weight:bold;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="editEventBtn">
+            <property name="text"><string>✎  Изменить</string></property>
+            <property name="styleSheet">
+             <string>background:#e9c46a; color:#1e1e2e; font-weight:bold;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="deleteEventBtn">
+            <property name="text"><string>✕  Удалить</string></property>
+            <property name="styleSheet">
+             <string>background:#e74c3c; color:white; font-weight:bold;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer>
+            <property name="orientation"><enum>Qt::Horizontal</enum></property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+
+      <!-- Теги -->
+      <widget class="QWidget" name="tabTags">
+       <attribute name="title"><string>Теги</string></attribute>
+       <layout class="QVBoxLayout" name="tagsLayout">
+        <property name="leftMargin"><number>16</number></property>
+        <property name="topMargin"><number>12</number></property>
+        <property name="rightMargin"><number>16</number></property>
+        <property name="bottomMargin"><number>12</number></property>
+        <property name="spacing"><number>10</number></property>
+
+        <item>
+         <widget class="QLabel" name="tagsTitleLabel">
+          <property name="text">
+           <string>Теги</string>
+          </property>
+          <property name="styleSheet">
+           <string>font-size:20px; font-weight:bold; color:#f4a261; padding:4px 0px;</string>
+          </property>
+         </widget>
+        </item>
+
+        <item>
+         <widget class="QTableView" name="tagsTableView">
+          <property name="alternatingRowColors"><bool>true</bool></property>
+          <property name="styleSheet">
+           <string>QTableView { alternate-background-color: #2d2d42; }</string>
+          </property>
+         </widget>
+        </item>
+
+        <item>
+         <layout class="QHBoxLayout" name="tagsButtonsLayout">
+          <property name="spacing"><number>10</number></property>
+          <item>
+           <widget class="QPushButton" name="addTagBtn">
+            <property name="text"><string>＋  Добавить</string></property>
+            <property name="styleSheet">
+             <string>background:#2ecc71; color:white; font-weight:bold;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="editTagBtn">
+            <property name="text"><string>✎  Изменить</string></property>
+            <property name="styleSheet">
+             <string>background:#f4a261; color:#1e1e2e; font-weight:bold;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="deleteTagBtn">
+            <property name="text"><string>✕  Удалить</string></property>
+            <property name="styleSheet">
+             <string>background:#e74c3c; color:white; font-weight:bold;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer>
+            <property name="orientation"><enum>Qt::Horizontal</enum></property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

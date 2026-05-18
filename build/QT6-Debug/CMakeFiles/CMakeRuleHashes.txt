@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+f3692386d29b9a082938ff49c3c44cc1 CMakeFiles/calendar_autogen
+2a2146deecbefc4189f2fb03759b24d1 calendar_autogen/timestamp

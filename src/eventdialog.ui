@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EventDialog</class>
+ <widget class="QDialog" name="EventDialog">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>480</width><height>560</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>Событие</string>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QDialog { background: #1e1e2e; }
+    QLabel  { color: #ccc; font-size: 13px; }
+    QLineEdit, QPlainTextEdit, QDateEdit, QComboBox {
+      background: #252535;
+      color: #e0e0e0;
+      border: 1px solid #3a3a5a;
+      border-radius: 5px;
+      padding: 6px;
+      font-size: 13px;
+    }
+    QLineEdit:focus, QPlainTextEdit:focus, QDateEdit:focus, QComboBox:focus {
+      border: 1px solid #3d5a80;
+    }
+    QCheckBox { color: #ccc; font-size: 13px; }
+    QGroupBox {
+      color: #98c1d9;
+      font-size: 13px;
+      border: 1px solid #3a3a5a;
+      border-radius: 6px;
+      margin-top: 8px;
+      padding-top: 6px;
+    }
+    QGroupBox::title {
+      subcontrol-origin: margin;
+      left: 10px;
+    }
+    QListWidget {
+      background: #252535;
+      color: #e0e0e0;
+      border: 1px solid #3a3a5a;
+      border-radius: 5px;
+      font-size: 13px;
+    }
+    QListWidget::item:hover   { background: #2d2d45; }
+    QListWidget::item:selected{ background: #3d5a80; }
+    QPushButton {
+      background: #3d5a80;
+      color: white;
+      border: none;
+      padding: 10px 28px;
+      border-radius: 6px;
+      font-size: 13px;
+      min-width: 100px;
+    }
+    QPushButton:hover { background: #4d6a90; }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+   <property name="leftMargin">
+    <number>16</number>
+   </property>
+   <property name="topMargin">
+    <number>16</number>
+   </property>
+   <property name="rightMargin">
+    <number>16</number>
+   </property>
+   <property name="bottomMargin">
+    <number>16</number>
+   </property>
+   <property name="spacing">
+    <number>10</number>
+   </property>
+
+   <item>
+    <widget class="QLabel" name="titleLabel">
+     <property name="text">
+      <string>Новое событие</string>
+     </property>
+     <property name="styleSheet">
+      <string>font-size:18px; font-weight:bold; color:#e9c46a; padding-bottom:4px;</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <property name="horizontalSpacing">
+      <number>12</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>10</number>
+     </property>
+
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelName">
+       <property name="text">
+        <string>Название *</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="titleEdit">
+       <property name="placeholderText">
+        <string>Введите название...</string>
+       </property>
+      </widget>
+     </item>
+
+     <item row="1" column="0">
+      <widget class="QLabel" name="labelDesc">
+       <property name="text">
+        <string>Описание</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPlainTextEdit" name="descriptionEdit">
+       <property name="maximumHeight">
+        <number>70</number>
+       </property>
+       <property name="placeholderText">
+        <string>Дополнительная информация...</string>
+       </property>
+      </widget>
+     </item>
+
+     <item row="2" column="0">
+      <widget class="QLabel" name="labelDate">
+       <property name="text">
+        <string>Дата *</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QDateEdit" name="dateEdit">
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+       <property name="displayFormat">
+        <string>dd.MM.yyyy</string>
+       </property>
+      </widget>
+     </item>
+
+     <item row="3" column="0">
+      <widget class="QLabel" name="labelType">
+       <property name="text">
+        <string>Тип</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QComboBox" name="typeComboBox">
+       <item>
+        <property name="text">
+         <string>событие</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>дедлайн</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>желание</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>напоминание</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+
+     <item row="4" column="0">
+      <widget class="QLabel" name="labelCategory">
+       <property name="text">
+        <string>Категория *</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QComboBox" name="categoryComboBox"/>
+     </item>
+
+     <item row="5" column="0">
+      <widget class="QLabel" name="labelDeadline">
+       <property name="text">
+        <string>Дедлайн</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QCheckBox" name="deadlineCheckBox">
+       <property name="text">
+        <string>Пометить как дедлайн</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+   <item>
+    <widget class="QGroupBox" name="tagsGroupBox">
+     <property name="title">
+      <string>Теги (можно выбрать несколько — связь M:M)</string>
+     </property>
+     <layout class="QVBoxLayout" name="tagsLayout">
+      <item>
+       <widget class="QListWidget" name="tagsListWidget">
+        <property name="minimumHeight">
+         <number>120</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
