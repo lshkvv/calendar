@@ -1146,27 +1146,12 @@ CMakeFiles/calendar.dir/src/mainwindow.cpp.o: \
   /opt/homebrew/lib/QtCore.framework/Headers/qabstractitemmodel.h \
   /opt/homebrew/lib/QtSql.framework/Headers/QSqlRelationalTableModel \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqlrelationaltablemodel.h \
-  /opt/homebrew/lib/QtSql.framework/Headers/QSqlRelationalDelegate \
-  /opt/homebrew/lib/QtSql.framework/Headers/qsqlrelationaldelegate.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qstyleditemdelegate.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractitemdelegate.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qstyleoption.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QStandardItemModel \
+  /opt/homebrew/lib/QtGui.framework/Headers/qstandarditemmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QDate \
+  /opt/homebrew/lib/QtCore.framework/Headers/qdatetime.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qcalendar.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qlocale.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractspinbox.h \
-  /opt/homebrew/lib/QtGui.framework/Headers/qvalidator.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qregularexpression.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qslider.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractslider.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qstyle.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qtabbar.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qrubberband.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qframe.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qlistview.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractitemview.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractscrollarea.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qitemselectionmodel.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qcombobox.h \
-  /opt/homebrew/lib/QtSql.framework/Headers/qsqldriver.h \
   /Users/aleksalaskevich/calendar/src/database.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QObject \
   /opt/homebrew/lib/QtSql.framework/Headers/QSqlDatabase \
@@ -1175,9 +1160,7 @@ CMakeFiles/calendar.dir/src/mainwindow.cpp.o: \
   /opt/homebrew/lib/QtSql.framework/Headers/QSqlError \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqlerror.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QString \
-  /opt/homebrew/lib/QtCore.framework/Headers/QDate \
-  /opt/homebrew/lib/QtCore.framework/Headers/qdatetime.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qcalendar.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QTime \
   /opt/homebrew/lib/QtCore.framework/Headers/QList \
   /opt/homebrew/lib/QtCore.framework/Headers/QDebug \
   /Users/aleksalaskevich/calendar/build/QT6-Debug/calendar_autogen/include/ui_mainwindow.h \
@@ -1195,6 +1178,8 @@ CMakeFiles/calendar.dir/src/mainwindow.cpp.o: \
   /opt/homebrew/lib/QtGui.framework/Headers/qguiapplication.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qinputmethod.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qguiapplication_platform.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QCalendarWidget \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qcalendarwidget.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QHBoxLayout \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qboxlayout.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qlayout.h \
@@ -1202,6 +1187,20 @@ CMakeFiles/calendar.dir/src/mainwindow.cpp.o: \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qgridlayout.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QHeaderView \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qheaderview.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractitemview.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractscrollarea.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qframe.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qitemselectionmodel.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractitemdelegate.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qstyleoption.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractspinbox.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/qvalidator.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qregularexpression.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qslider.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractslider.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qstyle.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qtabbar.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qrubberband.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QLabel \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qlabel.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qpicture.h \
@@ -1226,8 +1225,10 @@ CMakeFiles/calendar.dir/src/mainwindow.cpp.o: \
   /opt/homebrew/lib/QtGui.framework/Headers/QColor \
   /Users/aleksalaskevich/calendar/src/colorcelldelegate.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QStyledItemDelegate \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qstyleditemdelegate.h \
   /Users/aleksalaskevich/calendar/src/categorybadgedelegate.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QHash \
+  /Users/aleksalaskevich/calendar/src/tagchipdelegate.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QInputDialog \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qinputdialog.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qlineedit.h \
@@ -1235,12 +1236,15 @@ CMakeFiles/calendar.dir/src/mainwindow.cpp.o: \
   /opt/homebrew/lib/QtGui.framework/Headers/qtextformat.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qpen.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qtextoption.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QColorDialog \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qcolordialog.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QMessageBox \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qmessagebox.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qdialogbuttonbox.h \
   /opt/homebrew/lib/QtSql.framework/Headers/QSqlRelation \
+  /opt/homebrew/lib/QtSql.framework/Headers/QSqlRelationalDelegate \
+  /opt/homebrew/lib/QtSql.framework/Headers/qsqlrelationaldelegate.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qlistview.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qcombobox.h \
+  /opt/homebrew/lib/QtSql.framework/Headers/qsqldriver.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QFile \
   /opt/homebrew/lib/QtCore.framework/Headers/qfile.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qfiledevice.h \
@@ -1293,4 +1297,7 @@ CMakeFiles/calendar.dir/src/mainwindow.cpp.o: \
   /opt/homebrew/lib/QtCore.framework/Headers/qdir.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qdirlisting.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qfileinfo.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qtimezone.h
+  /opt/homebrew/lib/QtCore.framework/Headers/qtimezone.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QTextCharFormat \
+  /opt/homebrew/lib/QtGui.framework/Headers/QBrush \
+  /opt/homebrew/lib/QtGui.framework/Headers/QStandardItem

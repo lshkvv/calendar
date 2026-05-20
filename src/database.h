@@ -7,6 +7,7 @@
 #include <QSqlError>
 #include <QString>
 #include <QDate>
+#include <QTime>
 #include <QList>
 #include <QDebug>
 
@@ -19,6 +20,7 @@ public:
 
     bool init(const QString &dbPath);
     bool createTables();
+    bool ensureEventsSchema();
 
     bool addCategory(const QString &name, const QString &color);
     bool updateCategory(int id, const QString &name, const QString &color);
@@ -31,12 +33,15 @@ public:
     bool tagIsUsed(int id);
 
     bool addEvent(const QString &title, const QString &desc,
-                  const QDate &date, const QString &type,
-                  int categoryId, bool isDeadline);
+                  const QDate &date, const QTime &time,
+                  const QString &type, int categoryId, bool isDeadline);
+
     bool updateEvent(int id, const QString &title, const QString &desc,
-                     const QDate &date, const QString &type,
-                     int categoryId, bool isDeadline);
+                     const QDate &date, const QTime &time,
+                     const QString &type, int categoryId, bool isDeadline);
+
     bool deleteEvent(int id);
+    bool setEventDone(int eventId, bool done);
 
     bool assignTagsToEvent(int eventId, const QList<int> &tagIds);
     QList<int> getTagsForEvent(int eventId);

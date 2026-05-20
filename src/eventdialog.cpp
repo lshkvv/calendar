@@ -10,7 +10,9 @@ EventDialog::EventDialog(Database *db, QWidget *parent)
     , m_db(db)
 {
     ui->setupUi(this);
+
     ui->dateEdit->setDate(QDate::currentDate());
+    ui->timeEdit->setTime(QTime::currentTime());
 
     populateCategories();
     populateTags();
@@ -32,15 +34,17 @@ void EventDialog::loadEvent(int eventId)
     ui->titleLabel->setText("Редактировать событие");
 
     QSqlQuery q(m_db->db());
-    q.prepare("SELECT title, description, date, type, is_deadline, category_id "
+    q.prepare("SELECT title, description, date, time, type, is_deadline, category_id "
               "FROM events WHERE id = :id");
     q.bindValue(":id", eventId);
+
     if (!q.exec() || !q.next())
         return;
 
     ui->titleEdit->setText(q.value("title").toString());
     ui->descriptionEdit->setPlainText(q.value("description").toString());
     ui->dateEdit->setDate(QDate::fromString(q.value("date").toString(), "yyyy-MM-dd"));
+    ui->timeEdit->setTime(QTime::fromString(q.value("time").toString(), "HH:mm"));
 
     int idx = ui->typeComboBox->findText(q.value("type").toString());
     if (idx >= 0)
@@ -65,6 +69,7 @@ void EventDialog::populateCategories()
 
     QSqlQuery q(m_db->db());
     q.exec("SELECT id, name FROM categories ORDER BY name");
+
     while (q.next())
         ui->categoryComboBox->addItem(q.value("name").toString(), q.value("id").toInt());
 }
@@ -75,6 +80,7 @@ void EventDialog::populateTags()
 
     QSqlQuery q(m_db->db());
     q.exec("SELECT id, name FROM tags ORDER BY name");
+
     while (q.next()) {
         auto *item = new QListWidgetItem(q.value("name").toString(), ui->tagsListWidget);
         item->setData(Qt::UserRole, q.value("id").toInt());
@@ -98,10 +104,18 @@ bool EventDialog::validateInput()
         ui->titleEdit->setFocus();
         return false;
     }
+
     if (ui->categoryComboBox->currentIndex() < 0) {
         QMessageBox::warning(this, "Ошибка", "Выберите категорию.");
         return false;
     }
+
+    if (!ui->timeEdit->time().isValid()) {
+        QMessageBox::warning(this, "Ошибка", "Укажите корректное время.");
+        ui->timeEdit->setFocus();
+        return false;
+    }
+
     return true;
 }
 
@@ -124,6 +138,11 @@ QString EventDialog::description() const
 QDate EventDialog::date() const
 {
     return ui->dateEdit->date();
+}
+
+QTime EventDialog::time() const
+{
+    return ui->timeEdit->time();
 }
 
 QString EventDialog::eventType() const

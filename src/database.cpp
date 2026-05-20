@@ -11,18 +11,31 @@ Database::~Database()
 
 bool Database::init(const QString &dbPath)
 {
-    m_db = QSqlDatabase::addDatabase("QSQLITE");
+    qDebug() << "DB init path =" << dbPath;
+    qDebug() << "Available SQL drivers =" << QSqlDatabase::drivers();
+
+    if (QSqlDatabase::contains("qt_sql_default_connection"))
+        m_db = QSqlDatabase::database("qt_sql_default_connection");
+    else
+        m_db = QSqlDatabase::addDatabase("QSQLITE");
+
     m_db.setDatabaseName(dbPath);
 
     if (!m_db.open()) {
-        qDebug() << "Не удалось открыть БД:" << m_db.lastError().text();
+        qDebug() << "Не удалось открыть БД";
+        qDebug() << "Driver valid:" << m_db.isValid();
+        qDebug() << "Last error:" << m_db.lastError().text();
+        qDebug() << "Database name:" << m_db.databaseName();
         return false;
     }
 
     QSqlQuery q(m_db);
     q.exec("PRAGMA foreign_keys = ON;");
 
-    return createTables();
+    if (!createTables())
+        return false;
+
+    return ensureEventsSchema();
 }
 
 bool Database::createTables()
@@ -42,6 +55,7 @@ bool Database::createTables()
                 "title TEXT NOT NULL,"
                 "description TEXT DEFAULT '',"
                 "date TEXT NOT NULL,"
+                "time TEXT NOT NULL DEFAULT '00:00',"
                 "type TEXT NOT NULL DEFAULT 'событие',"
                 "is_deadline INTEGER NOT NULL DEFAULT 0,"
                 "category_id INTEGER NOT NULL,"
@@ -66,6 +80,28 @@ bool Database::createTables()
                 "FOREIGN KEY (tag_id) REFERENCES tags(id) ON DELETE CASCADE);")) {
         qDebug() << q.lastError().text();
         return false;
+    }
+
+    return true;
+}
+
+bool Database::ensureEventsSchema()
+{
+    QSqlQuery q(m_db);
+
+    bool hasIsDone = false;
+    if (q.exec("PRAGMA table_info(events)")) {
+        while (q.next()) {
+            if (q.value("name").toString() == "is_done") {
+                hasIsDone = true;
+                break;
+            }
+        }
+    }
+
+    if (!hasIsDone) {
+        QSqlQuery alter(m_db);
+        alter.exec("ALTER TABLE events ADD COLUMN is_done INTEGER NOT NULL DEFAULT 0");
     }
 
     return true;
@@ -149,15 +185,16 @@ bool Database::tagIsUsed(int id)
 }
 
 bool Database::addEvent(const QString &title, const QString &desc,
-                        const QDate &date, const QString &type,
-                        int categoryId, bool isDeadline)
+                        const QDate &date, const QTime &time,
+                        const QString &type, int categoryId, bool isDeadline)
 {
     QSqlQuery q(m_db);
-    q.prepare("INSERT INTO events (title, description, date, type, is_deadline, category_id)"
-              " VALUES (:t, :d, :dt, :tp, :dl, :cat)");
+    q.prepare("INSERT INTO events (title, description, date, time, type, is_deadline, category_id)"
+              " VALUES (:t, :d, :dt, :tm, :tp, :dl, :cat)");
     q.bindValue(":t",   title);
     q.bindValue(":d",   desc);
     q.bindValue(":dt",  date.toString("yyyy-MM-dd"));
+    q.bindValue(":tm",  time.toString("HH:mm"));
     q.bindValue(":tp",  type);
     q.bindValue(":dl",  isDeadline ? 1 : 0);
     q.bindValue(":cat", categoryId);
@@ -165,15 +202,16 @@ bool Database::addEvent(const QString &title, const QString &desc,
 }
 
 bool Database::updateEvent(int id, const QString &title, const QString &desc,
-                           const QDate &date, const QString &type,
-                           int categoryId, bool isDeadline)
+                           const QDate &date, const QTime &time,
+                           const QString &type, int categoryId, bool isDeadline)
 {
     QSqlQuery q(m_db);
-    q.prepare("UPDATE events SET title=:t, description=:d, date=:dt,"
+    q.prepare("UPDATE events SET title=:t, description=:d, date=:dt, time=:tm,"
               " type=:tp, is_deadline=:dl, category_id=:cat WHERE id=:id");
     q.bindValue(":t",   title);
     q.bindValue(":d",   desc);
     q.bindValue(":dt",  date.toString("yyyy-MM-dd"));
+    q.bindValue(":tm",  time.toString("HH:mm"));
     q.bindValue(":tp",  type);
     q.bindValue(":dl",  isDeadline ? 1 : 0);
     q.bindValue(":cat", categoryId);
@@ -187,6 +225,15 @@ bool Database::deleteEvent(int id)
     q.prepare("DELETE FROM events WHERE id=:id");
     q.bindValue(":id", id);
     return execQuery(q, "deleteEvent");
+}
+
+bool Database::setEventDone(int eventId, bool done)
+{
+    QSqlQuery q(m_db);
+    q.prepare("UPDATE events SET is_done = :done WHERE id = :id");
+    q.bindValue(":done", done ? 1 : 0);
+    q.bindValue(":id", eventId);
+    return execQuery(q, "setEventDone");
 }
 
 bool Database::assignTagsToEvent(int eventId, const QList<int> &tagIds)

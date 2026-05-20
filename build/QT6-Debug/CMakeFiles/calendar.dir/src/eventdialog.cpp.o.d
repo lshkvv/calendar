@@ -1138,6 +1138,7 @@ CMakeFiles/calendar.dir/src/eventdialog.cpp.o: \
   /opt/homebrew/lib/QtCore.framework/Headers/qdatetime.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qcalendar.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qlocale.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QTime \
   /opt/homebrew/lib/QtCore.framework/Headers/QList \
   /Users/aleksalaskevich/calendar/src/database.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QObject \
@@ -1239,6 +1240,7 @@ CMakeFiles/calendar.dir/src/eventdialog.cpp.o: \
   /opt/homebrew/lib/QtGui.framework/Headers/qglyphrun.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qrawfont.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qfontdatabase.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QTimeEdit \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QVBoxLayout \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QMessageBox \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qmessagebox.h \

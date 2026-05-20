@@ -23,6 +23,7 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QPlainTextEdit>
+#include <QtWidgets/QTimeEdit>
 #include <QtWidgets/QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
@@ -39,6 +40,8 @@ public:
     QPlainTextEdit *descriptionEdit;
     QLabel *labelDate;
     QDateEdit *dateEdit;
+    QLabel *labelTime;
+    QTimeEdit *timeEdit;
     QLabel *labelType;
     QComboBox *typeComboBox;
     QLabel *labelCategory;
@@ -54,7 +57,7 @@ public:
     {
         if (EventDialog->objectName().isEmpty())
             EventDialog->setObjectName("EventDialog");
-        EventDialog->resize(480, 560);
+        EventDialog->resize(500, 600);
         mainLayout = new QVBoxLayout(EventDialog);
         mainLayout->setSpacing(10);
         mainLayout->setObjectName("mainLayout");
@@ -100,10 +103,20 @@ public:
 
         formLayout->setWidget(2, QFormLayout::ItemRole::FieldRole, dateEdit);
 
+        labelTime = new QLabel(EventDialog);
+        labelTime->setObjectName("labelTime");
+
+        formLayout->setWidget(3, QFormLayout::ItemRole::LabelRole, labelTime);
+
+        timeEdit = new QTimeEdit(EventDialog);
+        timeEdit->setObjectName("timeEdit");
+
+        formLayout->setWidget(3, QFormLayout::ItemRole::FieldRole, timeEdit);
+
         labelType = new QLabel(EventDialog);
         labelType->setObjectName("labelType");
 
-        formLayout->setWidget(3, QFormLayout::ItemRole::LabelRole, labelType);
+        formLayout->setWidget(4, QFormLayout::ItemRole::LabelRole, labelType);
 
         typeComboBox = new QComboBox(EventDialog);
         typeComboBox->addItem(QString());
@@ -112,27 +125,27 @@ public:
         typeComboBox->addItem(QString());
         typeComboBox->setObjectName("typeComboBox");
 
-        formLayout->setWidget(3, QFormLayout::ItemRole::FieldRole, typeComboBox);
+        formLayout->setWidget(4, QFormLayout::ItemRole::FieldRole, typeComboBox);
 
         labelCategory = new QLabel(EventDialog);
         labelCategory->setObjectName("labelCategory");
 
-        formLayout->setWidget(4, QFormLayout::ItemRole::LabelRole, labelCategory);
+        formLayout->setWidget(5, QFormLayout::ItemRole::LabelRole, labelCategory);
 
         categoryComboBox = new QComboBox(EventDialog);
         categoryComboBox->setObjectName("categoryComboBox");
 
-        formLayout->setWidget(4, QFormLayout::ItemRole::FieldRole, categoryComboBox);
+        formLayout->setWidget(5, QFormLayout::ItemRole::FieldRole, categoryComboBox);
 
         labelDeadline = new QLabel(EventDialog);
         labelDeadline->setObjectName("labelDeadline");
 
-        formLayout->setWidget(5, QFormLayout::ItemRole::LabelRole, labelDeadline);
+        formLayout->setWidget(6, QFormLayout::ItemRole::LabelRole, labelDeadline);
 
         deadlineCheckBox = new QCheckBox(EventDialog);
         deadlineCheckBox->setObjectName("deadlineCheckBox");
 
-        formLayout->setWidget(5, QFormLayout::ItemRole::FieldRole, deadlineCheckBox);
+        formLayout->setWidget(6, QFormLayout::ItemRole::FieldRole, deadlineCheckBox);
 
 
         mainLayout->addLayout(formLayout);
@@ -168,7 +181,7 @@ public:
         EventDialog->setStyleSheet(QCoreApplication::translate("EventDialog", "\n"
 "    QDialog { background: #1e1e2e; }\n"
 "    QLabel  { color: #ccc; font-size: 13px; }\n"
-"    QLineEdit, QPlainTextEdit, QDateEdit, QComboBox {\n"
+"    QLineEdit, QPlainTextEdit, QDateEdit, QTimeEdit, QComboBox {\n"
 "      background: #252535;\n"
 "      color: #e0e0e0;\n"
 "      border: 1px solid #3a3a5a;\n"
@@ -176,7 +189,7 @@ public:
 "      padding: 6px;\n"
 "      font-size: 13px;\n"
 "    }\n"
-"    QLineEdit:focus, QPlainTextEdit:focus, QDateEdit:focus, QComboBox:focus {\n"
+"    QLineEdit:focus, QPlainTextEdit:focus, QDateEdit:focus, QTimeEdit:focus, QComboBox:focus {\n"
 "      border: 1px solid #3d5a80;\n"
 "    }\n"
 "    QCheckBox { color: #ccc; font-size: 13px; }\n"
@@ -188,10 +201,7 @@ public:
 "      margin-top: 8px;\n"
 "      padding-top: 6px;\n"
 "    }\n"
-"    QGroupBox::title {\n"
-"      subcontrol-origin: margin;\n"
-"      left: 10px;\n"
-"    }\n"
+"    QGroupBox::title { subcontrol-origin: margin; left: 10px; }\n"
 "    QListWidget {\n"
 "      background: #252535;\n"
 "      color: #e0e0e0;\n"
@@ -221,6 +231,8 @@ public:
         descriptionEdit->setPlaceholderText(QCoreApplication::translate("EventDialog", "\320\224\320\276\320\277\320\276\320\273\320\275\320\270\321\202\320\265\320\273\321\214\320\275\320\260\321\217 \320\270\320\275\321\204\320\276\321\200\320\274\320\260\321\206\320\270\321\217...", nullptr));
         labelDate->setText(QCoreApplication::translate("EventDialog", "\320\224\320\260\321\202\320\260 *", nullptr));
         dateEdit->setDisplayFormat(QCoreApplication::translate("EventDialog", "dd.MM.yyyy", nullptr));
+        labelTime->setText(QCoreApplication::translate("EventDialog", "\320\222\321\200\320\265\320\274\321\217 *", nullptr));
+        timeEdit->setDisplayFormat(QCoreApplication::translate("EventDialog", "HH:mm", nullptr));
         labelType->setText(QCoreApplication::translate("EventDialog", "\320\242\320\270\320\277", nullptr));
         typeComboBox->setItemText(0, QCoreApplication::translate("EventDialog", "\321\201\320\276\320\261\321\213\321\202\320\270\320\265", nullptr));
         typeComboBox->setItemText(1, QCoreApplication::translate("EventDialog", "\320\264\320\265\320\264\320\273\320\260\320\271\320\275", nullptr));
@@ -230,7 +242,7 @@ public:
         labelCategory->setText(QCoreApplication::translate("EventDialog", "\320\232\320\260\321\202\320\265\320\263\320\276\321\200\320\270\321\217 *", nullptr));
         labelDeadline->setText(QCoreApplication::translate("EventDialog", "\320\224\320\265\320\264\320\273\320\260\320\271\320\275", nullptr));
         deadlineCheckBox->setText(QCoreApplication::translate("EventDialog", "\320\237\320\276\320\274\320\265\321\202\320\270\321\202\321\214 \320\272\320\260\320\272 \320\264\320\265\320\264\320\273\320\260\320\271\320\275", nullptr));
-        tagsGroupBox->setTitle(QCoreApplication::translate("EventDialog", "\320\242\320\265\320\263\320\270 (\320\274\320\276\320\266\320\275\320\276 \320\262\321\213\320\261\321\200\320\260\321\202\321\214 \320\275\320\265\321\201\320\272\320\276\320\273\321\214\320\272\320\276 \342\200\224 \321\201\320\262\321\217\320\267\321\214 M:M)", nullptr));
+        tagsGroupBox->setTitle(QCoreApplication::translate("EventDialog", "\320\242\320\265\320\263\320\270 (\320\274\320\276\320\266\320\275\320\276 \320\262\321\213\320\261\321\200\320\260\321\202\321\214 \320\275\320\265\321\201\320\272\320\276\320\273\321\214\320\272\320\276)", nullptr));
     } // retranslateUi
 
 };

@@ -1177,6 +1177,7 @@ CMakeFiles/calendar.dir/calendar_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/lib/QtCore.framework/Headers/QDate \
   /opt/homebrew/lib/QtCore.framework/Headers/qdatetime.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qcalendar.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QTime \
   /opt/homebrew/lib/QtCore.framework/Headers/QList \
   /opt/homebrew/lib/QtCore.framework/Headers/QDebug \
   /Users/aleksalaskevich/calendar/build/QT6-Debug/calendar_autogen/UVLADIE3JM/moc_eventdialog.cpp \
@@ -1190,11 +1191,7 @@ CMakeFiles/calendar.dir/calendar_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqlquerymodel.h \
   /opt/homebrew/lib/QtSql.framework/Headers/QSqlRelationalTableModel \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqlrelationaltablemodel.h \
-  /opt/homebrew/lib/QtSql.framework/Headers/QSqlRelationalDelegate \
-  /opt/homebrew/lib/QtSql.framework/Headers/qsqlrelationaldelegate.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qlistview.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractitemview.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qabstractscrollarea.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qitemselectionmodel.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qcombobox.h \
-  /opt/homebrew/lib/QtSql.framework/Headers/qsqldriver.h
+  /opt/homebrew/lib/QtGui.framework/Headers/QStandardItemModel \
+  /opt/homebrew/lib/QtGui.framework/Headers/qstandarditemmodel.h \
+  /Users/aleksalaskevich/calendar/build/QT6-Debug/calendar_autogen/UVLADIE3JM/moc_tagchipdelegate.cpp \
+  /Users/aleksalaskevich/calendar/build/QT6-Debug/calendar_autogen/UVLADIE3JM/../../../../src/tagchipdelegate.h

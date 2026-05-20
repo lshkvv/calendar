@@ -18,6 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/calendar.dir/src/main.cpp.o.d"
   "CMakeFiles/calendar.dir/src/mainwindow.cpp.o"
   "CMakeFiles/calendar.dir/src/mainwindow.cpp.o.d"
+  "CMakeFiles/calendar.dir/src/tagchipdelegate.cpp.o"
+  "CMakeFiles/calendar.dir/src/tagchipdelegate.cpp.o.d"
   "calendar.app/Contents/MacOS/calendar"
   "calendar.pdb"
   "calendar_autogen/mocs_compilation.cpp"

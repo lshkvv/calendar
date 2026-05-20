@@ -5,3 +5,4 @@
 #include "UVLADIE3JM/moc_database.cpp"
 #include "UVLADIE3JM/moc_eventdialog.cpp"
 #include "UVLADIE3JM/moc_mainwindow.cpp"
+#include "UVLADIE3JM/moc_tagchipdelegate.cpp"

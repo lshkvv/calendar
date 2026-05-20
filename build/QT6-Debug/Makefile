@@ -85,51 +85,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/opt/homebrew/Cellar/cmake/4.2.3/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/opt/homebrew/Cellar/cmake/4.2.3/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/opt/homebrew/Cellar/cmake/4.2.3/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/opt/homebrew/Cellar/cmake/4.2.3/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/opt/homebrew/Cellar/cmake/4.2.3/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/opt/homebrew/Cellar/cmake/4.2.3/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aleksalaskevich/calendar/build/QT6-Debug/CMakeFiles /Users/aleksalaskevich/calendar/build/QT6-Debug//CMakeFiles/progress.marks
@@ -392,6 +347,30 @@ src/mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/calendar.dir/build.make CMakeFiles/calendar.dir/src/mainwindow.cpp.s
 .PHONY : src/mainwindow.cpp.s
 
+src/tagchipdelegate.o: src/tagchipdelegate.cpp.o
+.PHONY : src/tagchipdelegate.o
+
+# target to build an object file
+src/tagchipdelegate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calendar.dir/build.make CMakeFiles/calendar.dir/src/tagchipdelegate.cpp.o
+.PHONY : src/tagchipdelegate.cpp.o
+
+src/tagchipdelegate.i: src/tagchipdelegate.cpp.i
+.PHONY : src/tagchipdelegate.i
+
+# target to preprocess a source file
+src/tagchipdelegate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calendar.dir/build.make CMakeFiles/calendar.dir/src/tagchipdelegate.cpp.i
+.PHONY : src/tagchipdelegate.cpp.i
+
+src/tagchipdelegate.s: src/tagchipdelegate.cpp.s
+.PHONY : src/tagchipdelegate.s
+
+# target to generate assembly for a file
+src/tagchipdelegate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calendar.dir/build.make CMakeFiles/calendar.dir/src/tagchipdelegate.cpp.s
+.PHONY : src/tagchipdelegate.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -399,10 +378,6 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... install"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... calendar_autogen"
 	@echo "... calendar_autogen_timestamp_deps"
@@ -431,6 +406,9 @@ help:
 	@echo "... src/mainwindow.o"
 	@echo "... src/mainwindow.i"
 	@echo "... src/mainwindow.s"
+	@echo "... src/tagchipdelegate.o"
+	@echo "... src/tagchipdelegate.i"
+	@echo "... src/tagchipdelegate.s"
 .PHONY : help
 
 

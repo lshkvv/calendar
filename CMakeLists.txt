@@ -9,7 +9,6 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Qt6 или Qt5, как у тебя стоит
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Sql)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Sql)
 
@@ -21,6 +20,7 @@ set(PROJECT_SOURCES
     src/categorydialog.cpp
     src/colorcelldelegate.cpp
     src/categorybadgedelegate.cpp
+    src/tagchipdelegate.cpp
 
     src/mainwindow.h
     src/database.h
@@ -28,6 +28,7 @@ set(PROJECT_SOURCES
     src/categorydialog.h
     src/colorcelldelegate.h
     src/categorybadgedelegate.h
+    src/tagchipdelegate.h
 
     src/mainwindow.ui
     src/eventdialog.ui
@@ -40,15 +41,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
     )
 else()
-    if(ANDROID)
-        add_library(calendar SHARED
-            ${PROJECT_SOURCES}
-        )
-    else()
-        add_executable(calendar
-            ${PROJECT_SOURCES}
-        )
-    endif()
+    add_executable(calendar
+        ${PROJECT_SOURCES}
+    )
 endif()
 
 target_link_libraries(calendar PRIVATE
@@ -56,24 +51,9 @@ target_link_libraries(calendar PRIVATE
     Qt${QT_VERSION_MAJOR}::Sql
 )
 
-if(${QT_VERSION} VERSION_LESS 6.1.0)
-    set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.calendar)
-endif()
-
 set_target_properties(calendar PROPERTIES
-    ${BUNDLE_ID_OPTION}
-    MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
-    MACOSX_BUNDLE_SHORT_VERSION_STRING
-        ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
     MACOSX_BUNDLE TRUE
     WIN32_EXECUTABLE TRUE
-)
-
-include(GNUInstallDirs)
-install(TARGETS calendar
-    BUNDLE DESTINATION .
-    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
 if(QT_VERSION_MAJOR EQUAL 6)

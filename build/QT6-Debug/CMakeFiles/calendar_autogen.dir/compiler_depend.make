@@ -915,24 +915,84 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
   /Users/aleksalaskevich/calendar/src/mainwindow.cpp \
   /Users/aleksalaskevich/calendar/src/mainwindow.h \
   /Users/aleksalaskevich/calendar/src/mainwindow.ui \
+  /Users/aleksalaskevich/calendar/src/tagchipdelegate.cpp \
+  /Users/aleksalaskevich/calendar/src/tagchipdelegate.h \
   /opt/homebrew/Cellar/cmake/4.2.3/bin/cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeCXXCompiler.cmake.in \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeCXXInformation.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeCommonLanguageInclude.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeCompilerIdDetection.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeDetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeDetermineCompilerABI.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeDetermineCompilerId.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeDetermineSystem.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeFindBinUtils.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeGenericSystem.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeInitializeConfigs.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeLanguageInformation.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeSystem.cmake.in \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeSystemSpecificInformation.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeTestCXXCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeTestCompilerCommon.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeUnixFindMake.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CheckCXXCompilerFlag.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CheckCXXSourceCompiles.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CheckIncludeFileCXX.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CheckLibraryExists.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/AppleClang-CXX.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Clang.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/GNU.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/FindOpenGL.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/FindPackageHandleStandardArgs.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/FindPackageMessage.cmake \
@@ -941,15 +1001,19 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/GNUInstallDirs.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Internal/FeatureTesting.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Linker/AppleClang-CXX.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Linker/AppleClang.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/MacroAddFileDependencies.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Platform/Apple-Clang.cmake \
+  /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Platform/Darwin-Initialize.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Platform/Darwin.cmake \
   /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake \
@@ -961,6 +1025,7 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/QList \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/QObject \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/QString \
+  /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/QTime \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/q17memory.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/q20iterator.h \
@@ -1015,7 +1080,6 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qhash.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qhashfunctions.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qiodevicebase.h \
-  /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qitemselectionmodel.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qiterable.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qiterator.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qlatin1stringview.h \
@@ -1096,6 +1160,7 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qyieldcpu.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/QColor \
+  /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/QStandardItemModel \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/qaction.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/qbitmap.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/qbrush.h \
@@ -1116,6 +1181,7 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/qregion.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/qrgb.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/qrgba64.h \
+  /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/qstandarditemmodel.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/qtgui-config.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/qtguiexports.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/qtguiglobal.h \
@@ -1125,15 +1191,12 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/QSqlDatabase \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/QSqlError \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/QSqlQuery \
-  /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/QSqlRelationalDelegate \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/QSqlRelationalTableModel \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/QSqlTableModel \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/qsqldatabase.h \
-  /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/qsqldriver.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/qsqlerror.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/qsqlquery.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/qsqlquerymodel.h \
-  /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/qsqlrelationaldelegate.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/qsqlrelationaltablemodel.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/qsqltablemodel.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/qtsql-config.h \
@@ -1143,14 +1206,10 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/QStyledItemDelegate \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qabstractitemdelegate.h \
-  /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qabstractitemview.h \
-  /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qabstractscrollarea.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qabstractslider.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qabstractspinbox.h \
-  /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qcombobox.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qdialog.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \
-  /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qlistview.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qrubberband.h \
   /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h \
@@ -1411,8 +1470,6 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
 
 /opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake:
 
-/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake:
-
 /opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake:
@@ -1452,8 +1509,6 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
 /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake:
 
 /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QWebpPluginTargets.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets-release.cmake:
 
@@ -1527,6 +1582,8 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginTargets.cmake:
 
+/opt/homebrew/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginConfig.cmake:
+
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake:
@@ -1597,6 +1654,8 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginTargets.cmake:
 
+/opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginTargets-release.cmake:
+
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginDependencies.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:
@@ -1622,8 +1681,6 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomPurlHelpers.cmake:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake:
-
-/opt/homebrew/lib/cmake/Qt6/QtPublicSbomHelpers.cmake:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake:
 
@@ -1663,8 +1720,6 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
 
 /opt/homebrew/lib/cmake/Qt6/Qt6ConfigVersion.cmake:
 
-/opt/homebrew/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:
-
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qstyle.h:
 
 /opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusAdditionalTargetInfo.cmake:
@@ -1673,21 +1728,9 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
 
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qrubberband.h:
 
-/opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginTargets-release.cmake:
-
-/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qlistview.h:
-
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginAdditionalTargetInfo.cmake:
-
-/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h:
-
-/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qframe.h:
-
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-release.cmake:
 
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qabstractspinbox.h:
-
-/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qabstractscrollarea.h:
 
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qabstractitemdelegate.h:
 
@@ -1699,19 +1742,11 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
 
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/qsqlrelationaltablemodel.h:
 
-/opt/homebrew/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginConfig.cmake:
-
-/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/qsqlrelationaldelegate.h:
-
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/qsqlquery.h:
 
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/qsqlerror.h:
 
-/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/qsqldriver.h:
-
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/QSqlRelationalTableModel:
-
-/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/QSqlRelationalDelegate:
 
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/QSqlDatabase:
 
@@ -1725,11 +1760,11 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
 
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/qtransform.h:
 
+/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/qstandarditemmodel.h:
+
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/qpolygon.h:
 
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/qkeysequence.h:
-
-/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/qimage.h:
 
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/qfontvariableaxis.h:
 
@@ -1787,8 +1822,6 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
 
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qswap.h:
 
-/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qstringmatcher.h:
-
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qstringlist.h:
 
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qstringconverter.h:
@@ -1837,8 +1870,6 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
 
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qmap.h:
 
-/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qmalloc.h:
-
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qlogging.h:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake:
@@ -1848,8 +1879,6 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qline.h:
 
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qiterable.h:
-
-/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qitemselectionmodel.h:
 
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qglobalstatic.h:
 
@@ -1897,8 +1926,6 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
 
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qarraydata.h:
 
-/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qanystringview.h:
-
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qalgorithms.h:
 
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/q23type_traits.h:
@@ -1917,6 +1944,14 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
 
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/q17memory.h:
 
+/opt/homebrew/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginAdditionalTargetInfo.cmake:
+
+/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h:
+
+/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qframe.h:
+
+/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/QTime:
+
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtSql.framework/Versions/A/Headers/qtsqlexports.h:
 
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/QObject:
@@ -1930,6 +1965,8 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
 /opt/homebrew/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake:
 
 /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Platform/Darwin-Initialize.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake:
 
 /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake:
 
@@ -1951,21 +1988,99 @@ calendar_autogen/timestamp: /Applications/Xcode.app/Contents/Developer/Toolchain
 
 /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:
 
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake:
+
+/opt/homebrew/lib/cmake/Qt6/QtPublicSbomHelpers.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake:
+
+/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/qimage.h:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake:
+
+/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qanystringview.h:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake:
+
+/opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake:
+
+/opt/homebrew/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake:
+
+/opt/homebrew/lib/cmake/Qt6Gui/Qt6QWebpPluginTargets.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake:
+
+/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qmalloc.h:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake:
+
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QJp2PluginTargets.cmake:
 
 /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Clang.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake:
 
 /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake:
 
 /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake:
 
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake:
+
+/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qstringmatcher.h:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake:
+
 /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CheckIncludeFileCXX.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QPdfPluginConfig.cmake:
 
-/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qcombobox.h:
-
 /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CheckCXXSourceCompiles.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeTestCompilerCommon.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeTestCXXCompiler.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeSystem.cmake.in:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeFindBinUtils.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeDetermineCompilerId.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeDetermineCompiler.cmake:
 
 /opt/homebrew/Cellar/cmake/4.2.3/bin/cmake:
 
@@ -2229,9 +2344,13 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/cwchar:
 
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/ctime:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/cstdio:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeCXXCompiler.cmake.in:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__bit/rotate.h:
 
@@ -2483,6 +2602,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Platform/UnixPaths.cmake:
 
+/Users/aleksalaskevich/calendar/src/tagchipdelegate.cpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__math/exponential_functions.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/is_bounded_array.h:
@@ -2531,6 +2652,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake:
 
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__utility/piecewise_construct.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__math/inverse_hyperbolic_functions.h:
@@ -2538,6 +2661,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/disjunction.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/datasizeof.h:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/copy_cv.h:
 
@@ -2579,6 +2704,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__system_error/system_error.h:
 
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/is_trivial.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/is_array.h:
@@ -2596,8 +2723,6 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__chrono/statically_widen.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/common_type.h:
-
-/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtWidgets.framework/Versions/A/Headers/qabstractitemview.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h:
 
@@ -2665,6 +2790,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__numeric/exclusive_scan.h:
 
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__iterator/ostreambuf_iterator.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__system_error/error_category.h:
@@ -2703,6 +2830,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__memory/uses_allocator.h:
 
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__chrono/convert_to_tm.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__memory/uninitialized_algorithms.h:
@@ -2738,6 +2867,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__memory/concepts.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/invoke.h:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__memory/builtin_new_allocator.h:
 
@@ -2797,6 +2928,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__utility/as_const.h:
 
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/ctype.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__math/hypot.h:
@@ -2837,6 +2970,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h:
 
+/opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/QStandardItemModel:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/unwrap_ref.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__format/formatter_bool.h:
@@ -2858,6 +2993,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/mutex:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__iterator/move_iterator.h:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/move.h:
 
@@ -3014,6 +3151,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/cmath:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__functional/unary_negate.h:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeCompilerIdDetection.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__functional/unary_function.h:
 
@@ -3209,6 +3348,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__compare/compare_three_way.h:
 
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/remove_pointer.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h:
@@ -3317,6 +3458,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/optional:
 
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__charconv/to_chars_base_10.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/limits:
@@ -3348,6 +3491,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__ios/fpos.h:
 
 /opt/homebrew/lib/cmake/Qt6/QtInstallPaths.cmake:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Internal/FeatureTesting.cmake:
 
 /Users/aleksalaskevich/calendar/src/colorcelldelegate.cpp:
 
@@ -3390,6 +3535,8 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qtconfiginclude.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/strip_signature.h:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__atomic/atomic_base.h:
 
@@ -3453,6 +3600,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h:
 
+/Users/aleksalaskevich/calendar/src/tagchipdelegate.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/set_union.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/machine/_endian.h:
@@ -3478,6 +3627,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /opt/homebrew/lib/cmake/Qt6/FindWrapAtomic.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_starts_with.h:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__format/buffer.h:
 
@@ -3579,6 +3730,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_merge.h:
 
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__concepts/copyable.h:
@@ -3659,13 +3812,19 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /opt/homebrew/lib/cmake/Qt6/Qt6ConfigExtras.cmake:
 
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_is_sorted_until.h:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake:
 
 /opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeGenericSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__fwd/hash.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_is_partitioned.h:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/execution:
 
@@ -3797,6 +3956,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__iterator/istreambuf_iterator.h:
 
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeDetermineSystem.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__concepts/invocable.h:
 
 /opt/homebrew/lib/cmake/Qt6/macos/Info.plist.app.in:
@@ -3883,6 +4044,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_includes.h:
 
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/fill.h:
 
 /opt/homebrew/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake:
@@ -3961,13 +4124,19 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/make_heap.h:
 
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/sys/_types/_in_port_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/arm/types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/reverse.h:
 
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__assertion_handler:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__format/format_error.h:
 
@@ -4024,6 +4193,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/for_each_n.h:
 
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtCore.framework/Versions/A/Headers/qobject.h:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/CMakeUnixFindMake.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:
 
@@ -4111,6 +4282,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:
 
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/is_member_object_pointer.h:
@@ -4157,6 +4330,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/add_const.h:
 
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__atomic/atomic_sync.h:
 
 /opt/homebrew/Cellar/qtbase/6.10.2/lib/QtGui.framework/Versions/A/Headers/qicon.h:
@@ -4202,6 +4377,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_set_symmetric_difference.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include/__stdarg_va_copy.h:
+
+/opt/homebrew/Cellar/cmake/4.2.3/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__functional/default_searcher.h:
 

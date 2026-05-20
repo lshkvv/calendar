@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QCalendarWidget>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
@@ -29,17 +30,12 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QVBoxLayout *verticalLayout;
+    QVBoxLayout *mainLayout;
     QTabWidget *tabWidget;
-    QWidget *tabCategories;
-    QVBoxLayout *categoriesLayout;
-    QLabel *catTitleLabel;
-    QTableView *categoriesTableView;
-    QHBoxLayout *catButtonsLayout;
-    QPushButton *addCategoryBtn;
-    QPushButton *editCategoryBtn;
-    QPushButton *deleteCategoryBtn;
-    QSpacerItem *spacerItem;
+    QWidget *tabToday;
+    QVBoxLayout *todayLayout;
+    QLabel *todayTitleLabel;
+    QTableView *todayTableView;
     QWidget *tabEvents;
     QVBoxLayout *eventsLayout;
     QLabel *evtTitleLabel;
@@ -49,6 +45,25 @@ public:
     QPushButton *addEventBtn;
     QPushButton *editEventBtn;
     QPushButton *deleteEventBtn;
+    QSpacerItem *spacerItem;
+    QWidget *tabWishlist;
+    QVBoxLayout *wishlistLayout;
+    QLabel *wishlistTitleLabel;
+    QTableView *wishlistTableView;
+    QWidget *tabCalendar;
+    QVBoxLayout *calendarMainLayout;
+    QLabel *calendarTitleLabel;
+    QHBoxLayout *calendarLayout;
+    QCalendarWidget *calendarWidget;
+    QTableView *calendarTableView;
+    QWidget *tabCategories;
+    QVBoxLayout *categoriesLayout;
+    QLabel *catTitleLabel;
+    QTableView *categoriesTableView;
+    QHBoxLayout *catButtonsLayout;
+    QPushButton *addCategoryBtn;
+    QPushButton *editCategoryBtn;
+    QPushButton *deleteCategoryBtn;
     QSpacerItem *spacerItem1;
     QWidget *tabTags;
     QVBoxLayout *tagsLayout;
@@ -65,58 +80,33 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(960, 640);
+        MainWindow->resize(1040, 700);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        verticalLayout = new QVBoxLayout(centralwidget);
-        verticalLayout->setSpacing(0);
-        verticalLayout->setObjectName("verticalLayout");
-        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        mainLayout = new QVBoxLayout(centralwidget);
+        mainLayout->setSpacing(0);
+        mainLayout->setObjectName("mainLayout");
+        mainLayout->setContentsMargins(0, 0, 0, 0);
         tabWidget = new QTabWidget(centralwidget);
         tabWidget->setObjectName("tabWidget");
-        tabCategories = new QWidget();
-        tabCategories->setObjectName("tabCategories");
-        categoriesLayout = new QVBoxLayout(tabCategories);
-        categoriesLayout->setSpacing(10);
-        categoriesLayout->setObjectName("categoriesLayout");
-        categoriesLayout->setContentsMargins(16, 12, 16, 12);
-        catTitleLabel = new QLabel(tabCategories);
-        catTitleLabel->setObjectName("catTitleLabel");
+        tabToday = new QWidget();
+        tabToday->setObjectName("tabToday");
+        todayLayout = new QVBoxLayout(tabToday);
+        todayLayout->setSpacing(10);
+        todayLayout->setObjectName("todayLayout");
+        todayLayout->setContentsMargins(16, 12, 16, 12);
+        todayTitleLabel = new QLabel(tabToday);
+        todayTitleLabel->setObjectName("todayTitleLabel");
 
-        categoriesLayout->addWidget(catTitleLabel);
+        todayLayout->addWidget(todayTitleLabel);
 
-        categoriesTableView = new QTableView(tabCategories);
-        categoriesTableView->setObjectName("categoriesTableView");
-        categoriesTableView->setAlternatingRowColors(true);
+        todayTableView = new QTableView(tabToday);
+        todayTableView->setObjectName("todayTableView");
+        todayTableView->setAlternatingRowColors(true);
 
-        categoriesLayout->addWidget(categoriesTableView);
+        todayLayout->addWidget(todayTableView);
 
-        catButtonsLayout = new QHBoxLayout();
-        catButtonsLayout->setSpacing(10);
-        catButtonsLayout->setObjectName("catButtonsLayout");
-        addCategoryBtn = new QPushButton(tabCategories);
-        addCategoryBtn->setObjectName("addCategoryBtn");
-
-        catButtonsLayout->addWidget(addCategoryBtn);
-
-        editCategoryBtn = new QPushButton(tabCategories);
-        editCategoryBtn->setObjectName("editCategoryBtn");
-
-        catButtonsLayout->addWidget(editCategoryBtn);
-
-        deleteCategoryBtn = new QPushButton(tabCategories);
-        deleteCategoryBtn->setObjectName("deleteCategoryBtn");
-
-        catButtonsLayout->addWidget(deleteCategoryBtn);
-
-        spacerItem = new QSpacerItem(0, 0, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
-
-        catButtonsLayout->addItem(spacerItem);
-
-
-        categoriesLayout->addLayout(catButtonsLayout);
-
-        tabWidget->addTab(tabCategories, QString());
+        tabWidget->addTab(tabToday, QString());
         tabEvents = new QWidget();
         tabEvents->setObjectName("tabEvents");
         eventsLayout = new QVBoxLayout(tabEvents);
@@ -157,14 +147,105 @@ public:
 
         evtButtonsLayout->addWidget(deleteEventBtn);
 
-        spacerItem1 = new QSpacerItem(0, 0, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
+        spacerItem = new QSpacerItem(0, 0, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
 
-        evtButtonsLayout->addItem(spacerItem1);
+        evtButtonsLayout->addItem(spacerItem);
 
 
         eventsLayout->addLayout(evtButtonsLayout);
 
         tabWidget->addTab(tabEvents, QString());
+        tabWishlist = new QWidget();
+        tabWishlist->setObjectName("tabWishlist");
+        wishlistLayout = new QVBoxLayout(tabWishlist);
+        wishlistLayout->setSpacing(10);
+        wishlistLayout->setObjectName("wishlistLayout");
+        wishlistLayout->setContentsMargins(16, 12, 16, 12);
+        wishlistTitleLabel = new QLabel(tabWishlist);
+        wishlistTitleLabel->setObjectName("wishlistTitleLabel");
+
+        wishlistLayout->addWidget(wishlistTitleLabel);
+
+        wishlistTableView = new QTableView(tabWishlist);
+        wishlistTableView->setObjectName("wishlistTableView");
+        wishlistTableView->setAlternatingRowColors(true);
+
+        wishlistLayout->addWidget(wishlistTableView);
+
+        tabWidget->addTab(tabWishlist, QString());
+        tabCalendar = new QWidget();
+        tabCalendar->setObjectName("tabCalendar");
+        calendarMainLayout = new QVBoxLayout(tabCalendar);
+        calendarMainLayout->setSpacing(10);
+        calendarMainLayout->setObjectName("calendarMainLayout");
+        calendarMainLayout->setContentsMargins(16, 12, 16, 12);
+        calendarTitleLabel = new QLabel(tabCalendar);
+        calendarTitleLabel->setObjectName("calendarTitleLabel");
+
+        calendarMainLayout->addWidget(calendarTitleLabel);
+
+        calendarLayout = new QHBoxLayout();
+        calendarLayout->setSpacing(12);
+        calendarLayout->setObjectName("calendarLayout");
+        calendarWidget = new QCalendarWidget(tabCalendar);
+        calendarWidget->setObjectName("calendarWidget");
+        calendarWidget->setGridVisible(true);
+
+        calendarLayout->addWidget(calendarWidget);
+
+        calendarTableView = new QTableView(tabCalendar);
+        calendarTableView->setObjectName("calendarTableView");
+        calendarTableView->setAlternatingRowColors(true);
+
+        calendarLayout->addWidget(calendarTableView);
+
+
+        calendarMainLayout->addLayout(calendarLayout);
+
+        tabWidget->addTab(tabCalendar, QString());
+        tabCategories = new QWidget();
+        tabCategories->setObjectName("tabCategories");
+        categoriesLayout = new QVBoxLayout(tabCategories);
+        categoriesLayout->setSpacing(10);
+        categoriesLayout->setObjectName("categoriesLayout");
+        categoriesLayout->setContentsMargins(16, 12, 16, 12);
+        catTitleLabel = new QLabel(tabCategories);
+        catTitleLabel->setObjectName("catTitleLabel");
+
+        categoriesLayout->addWidget(catTitleLabel);
+
+        categoriesTableView = new QTableView(tabCategories);
+        categoriesTableView->setObjectName("categoriesTableView");
+        categoriesTableView->setAlternatingRowColors(true);
+
+        categoriesLayout->addWidget(categoriesTableView);
+
+        catButtonsLayout = new QHBoxLayout();
+        catButtonsLayout->setSpacing(10);
+        catButtonsLayout->setObjectName("catButtonsLayout");
+        addCategoryBtn = new QPushButton(tabCategories);
+        addCategoryBtn->setObjectName("addCategoryBtn");
+
+        catButtonsLayout->addWidget(addCategoryBtn);
+
+        editCategoryBtn = new QPushButton(tabCategories);
+        editCategoryBtn->setObjectName("editCategoryBtn");
+
+        catButtonsLayout->addWidget(editCategoryBtn);
+
+        deleteCategoryBtn = new QPushButton(tabCategories);
+        deleteCategoryBtn->setObjectName("deleteCategoryBtn");
+
+        catButtonsLayout->addWidget(deleteCategoryBtn);
+
+        spacerItem1 = new QSpacerItem(0, 0, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
+
+        catButtonsLayout->addItem(spacerItem1);
+
+
+        categoriesLayout->addLayout(catButtonsLayout);
+
+        tabWidget->addTab(tabCategories, QString());
         tabTags = new QWidget();
         tabTags->setObjectName("tabTags");
         tagsLayout = new QVBoxLayout(tabTags);
@@ -209,7 +290,7 @@ public:
 
         tabWidget->addTab(tabTags, QString());
 
-        verticalLayout->addWidget(tabWidget);
+        mainLayout->addWidget(tabWidget);
 
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
@@ -271,16 +352,33 @@ public:
 "    QPushButton:pressed{ background: #2d4a70; }\n"
 "    QStatusBar { color: #888; background: #1e1e2e; font-size: 12px; }\n"
 "    QLabel { color: #e0e0e0; }\n"
+"    QCalendarWidget QWidget {\n"
+"      alternate-background-color: #252535;\n"
+"      background-color: #252535;\n"
+"      color: #e0e0e0;\n"
+"    }\n"
+"    QCalendarWidget QToolButton {\n"
+"      color: white;\n"
+"      background-color: #3d5a80;\n"
+"      border: none;\n"
+"      margin: 4px;\n"
+"      padding: 6px;\n"
+"      border-radius: 4px;\n"
+"    }\n"
+"    QCalendarWidget QMenu {\n"
+"      background-color: #2a2a3e;\n"
+"      color: white;\n"
+"    }\n"
+"    QCalendarWidget QSpinBox {\n"
+"      background: #252535;\n"
+"      color: white;\n"
+"      selection-background-color: #3d5a80;\n"
+"    }\n"
 "   ", nullptr));
-        catTitleLabel->setText(QCoreApplication::translate("MainWindow", "\320\232\320\260\321\202\320\265\320\263\320\276\321\200\320\270\320\270 \321\201\320\276\320\261\321\213\321\202\320\270\320\271", nullptr));
-        catTitleLabel->setStyleSheet(QCoreApplication::translate("MainWindow", "font-size:20px; font-weight:bold; color:#98c1d9; padding:4px 0px;", nullptr));
-        categoriesTableView->setStyleSheet(QCoreApplication::translate("MainWindow", "QTableView { alternate-background-color: #2d2d42; }", nullptr));
-        addCategoryBtn->setText(QCoreApplication::translate("MainWindow", "\357\274\213  \320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214", nullptr));
-        addCategoryBtn->setStyleSheet(QCoreApplication::translate("MainWindow", "background:#2ecc71; color:white; font-weight:bold;", nullptr));
-        editCategoryBtn->setText(QCoreApplication::translate("MainWindow", "\342\234\216  \320\230\320\267\320\274\320\265\320\275\320\270\321\202\321\214", nullptr));
-        deleteCategoryBtn->setText(QCoreApplication::translate("MainWindow", "\342\234\225  \320\243\320\264\320\260\320\273\320\270\321\202\321\214", nullptr));
-        deleteCategoryBtn->setStyleSheet(QCoreApplication::translate("MainWindow", "background:#e74c3c; color:white; font-weight:bold;", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tabCategories), QCoreApplication::translate("MainWindow", "\320\232\320\260\321\202\320\265\320\263\320\276\321\200\320\270\320\270", nullptr));
+        todayTitleLabel->setText(QCoreApplication::translate("MainWindow", "\320\241\320\265\320\263\320\276\320\264\320\275\321\217", nullptr));
+        todayTitleLabel->setStyleSheet(QCoreApplication::translate("MainWindow", "font-size:20px; font-weight:bold; color:#e9c46a; padding:4px 0px;", nullptr));
+        todayTableView->setStyleSheet(QCoreApplication::translate("MainWindow", "QTableView { alternate-background-color: #2d2d42; }", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tabToday), QCoreApplication::translate("MainWindow", "\320\241\320\265\320\263\320\276\320\264\320\275\321\217", nullptr));
         evtTitleLabel->setText(QCoreApplication::translate("MainWindow", "\320\241\320\276\320\261\321\213\321\202\320\270\321\217 \320\270 \320\267\320\260\320\264\320\260\321\207\320\270", nullptr));
         evtTitleLabel->setStyleSheet(QCoreApplication::translate("MainWindow", "font-size:20px; font-weight:bold; color:#e9c46a; padding:4px 0px;", nullptr));
         eventsTableView->setStyleSheet(QCoreApplication::translate("MainWindow", "QTableView { alternate-background-color: #2d2d42; }", nullptr));
@@ -299,7 +397,24 @@ public:
         editEventBtn->setStyleSheet(QCoreApplication::translate("MainWindow", "background:#e9c46a; color:#1e1e2e; font-weight:bold;", nullptr));
         deleteEventBtn->setText(QCoreApplication::translate("MainWindow", "\342\234\225  \320\243\320\264\320\260\320\273\320\270\321\202\321\214", nullptr));
         deleteEventBtn->setStyleSheet(QCoreApplication::translate("MainWindow", "background:#e74c3c; color:white; font-weight:bold;", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tabEvents), QCoreApplication::translate("MainWindow", "\320\241\320\276\320\261\321\213\321\202\320\270\321\217", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tabEvents), QCoreApplication::translate("MainWindow", "\320\236\320\261\321\211\320\270\320\271 \320\277\320\273\320\260\320\275", nullptr));
+        wishlistTitleLabel->setText(QCoreApplication::translate("MainWindow", "\320\245\320\276\321\207\321\203 \320\277\320\276\321\201\320\274\320\276\321\202\321\200\320\265\321\202\321\214 / \320\277\320\276\321\207\320\270\321\202\320\260\321\202\321\214 / \320\277\320\276\320\270\320\263\321\200\320\260\321\202\321\214", nullptr));
+        wishlistTitleLabel->setStyleSheet(QCoreApplication::translate("MainWindow", "font-size:20px; font-weight:bold; color:#f4a261; padding:4px 0px;", nullptr));
+        wishlistTableView->setStyleSheet(QCoreApplication::translate("MainWindow", "QTableView { alternate-background-color: #2d2d42; }", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tabWishlist), QCoreApplication::translate("MainWindow", "\320\226\320\265\320\273\320\260\320\275\320\270\321\217", nullptr));
+        calendarTitleLabel->setText(QCoreApplication::translate("MainWindow", "\320\232\320\260\320\273\320\265\320\275\320\264\320\260\321\200\321\214", nullptr));
+        calendarTitleLabel->setStyleSheet(QCoreApplication::translate("MainWindow", "font-size:20px; font-weight:bold; color:#98c1d9; padding:4px 0px;", nullptr));
+        calendarTableView->setStyleSheet(QCoreApplication::translate("MainWindow", "QTableView { alternate-background-color: #2d2d42; }", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tabCalendar), QCoreApplication::translate("MainWindow", "\320\232\320\260\320\273\320\265\320\275\320\264\320\260\321\200\321\214", nullptr));
+        catTitleLabel->setText(QCoreApplication::translate("MainWindow", "\320\232\320\260\321\202\320\265\320\263\320\276\321\200\320\270\320\270 \321\201\320\276\320\261\321\213\321\202\320\270\320\271", nullptr));
+        catTitleLabel->setStyleSheet(QCoreApplication::translate("MainWindow", "font-size:20px; font-weight:bold; color:#98c1d9; padding:4px 0px;", nullptr));
+        categoriesTableView->setStyleSheet(QCoreApplication::translate("MainWindow", "QTableView { alternate-background-color: #2d2d42; }", nullptr));
+        addCategoryBtn->setText(QCoreApplication::translate("MainWindow", "\357\274\213  \320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214", nullptr));
+        addCategoryBtn->setStyleSheet(QCoreApplication::translate("MainWindow", "background:#2ecc71; color:white; font-weight:bold;", nullptr));
+        editCategoryBtn->setText(QCoreApplication::translate("MainWindow", "\342\234\216  \320\230\320\267\320\274\320\265\320\275\320\270\321\202\321\214", nullptr));
+        deleteCategoryBtn->setText(QCoreApplication::translate("MainWindow", "\342\234\225  \320\243\320\264\320\260\320\273\320\270\321\202\321\214", nullptr));
+        deleteCategoryBtn->setStyleSheet(QCoreApplication::translate("MainWindow", "background:#e74c3c; color:white; font-weight:bold;", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tabCategories), QCoreApplication::translate("MainWindow", "\320\232\320\260\321\202\320\265\320\263\320\276\321\200\320\270\320\270", nullptr));
         tagsTitleLabel->setText(QCoreApplication::translate("MainWindow", "\320\242\320\265\320\263\320\270", nullptr));
         tagsTitleLabel->setStyleSheet(QCoreApplication::translate("MainWindow", "font-size:20px; font-weight:bold; color:#f4a261; padding:4px 0px;", nullptr));
         tagsTableView->setStyleSheet(QCoreApplication::translate("MainWindow", "QTableView { alternate-background-color: #2d2d42; }", nullptr));

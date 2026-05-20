@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <QDate>
+#include <QTime>
 #include <QList>
 #include "database.h"
 
@@ -22,6 +23,7 @@ public:
     QString    title()          const;
     QString    description()    const;
     QDate      date()           const;
+    QTime      time()           const;
     QString    eventType()      const;
     int        categoryId()     const;
     bool       isDeadline()     const;

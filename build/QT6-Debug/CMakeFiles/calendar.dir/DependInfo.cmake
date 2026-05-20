@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/aleksalaskevich/calendar/src/eventdialog.cpp" "CMakeFiles/calendar.dir/src/eventdialog.cpp.o" "gcc" "CMakeFiles/calendar.dir/src/eventdialog.cpp.o.d"
   "/Users/aleksalaskevich/calendar/src/main.cpp" "CMakeFiles/calendar.dir/src/main.cpp.o" "gcc" "CMakeFiles/calendar.dir/src/main.cpp.o.d"
   "/Users/aleksalaskevich/calendar/src/mainwindow.cpp" "CMakeFiles/calendar.dir/src/mainwindow.cpp.o" "gcc" "CMakeFiles/calendar.dir/src/mainwindow.cpp.o.d"
+  "/Users/aleksalaskevich/calendar/src/tagchipdelegate.cpp" "CMakeFiles/calendar.dir/src/tagchipdelegate.cpp.o" "gcc" "CMakeFiles/calendar.dir/src/tagchipdelegate.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
