@@ -1159,9 +1159,7 @@ CMakeFiles/calendar.dir/src/mainwindow.cpp.o: \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqlquery.h \
   /opt/homebrew/lib/QtSql.framework/Headers/QSqlError \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqlerror.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QString \
   /opt/homebrew/lib/QtCore.framework/Headers/QTime \
-  /opt/homebrew/lib/QtCore.framework/Headers/QList \
   /opt/homebrew/lib/QtCore.framework/Headers/QDebug \
   /Users/aleksalaskevich/calendar/build/QT6-Debug/calendar_autogen/include/ui_mainwindow.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QVariant \
@@ -1221,6 +1219,7 @@ CMakeFiles/calendar.dir/src/mainwindow.cpp.o: \
   /Users/aleksalaskevich/calendar/src/eventdialog.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QDialog \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qdialog.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QList \
   /Users/aleksalaskevich/calendar/src/categorydialog.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QColor \
   /Users/aleksalaskevich/calendar/src/colorcelldelegate.h \

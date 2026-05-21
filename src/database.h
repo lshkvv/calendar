@@ -5,22 +5,20 @@
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlError>
-#include <QString>
 #include <QDate>
 #include <QTime>
-#include <QList>
 #include <QDebug>
 
 class Database : public QObject
 {
     Q_OBJECT
+
 public:
     explicit Database(QObject *parent = nullptr);
     ~Database();
 
     bool init(const QString &dbPath);
-    bool createTables();
-    bool ensureEventsSchema();
+    QSqlDatabase db() const { return m_db; }
 
     bool addCategory(const QString &name, const QString &color);
     bool updateCategory(int id, const QString &name, const QString &color);
@@ -41,16 +39,14 @@ public:
                      const QString &type, int categoryId, bool isDeadline);
 
     bool deleteEvent(int id);
-    bool setEventDone(int eventId, bool done);
 
     bool assignTagsToEvent(int eventId, const QList<int> &tagIds);
     QList<int> getTagsForEvent(int eventId);
     QString getTagsStringForEvent(int eventId);
 
-    QSqlDatabase db() const { return m_db; }
-
 private:
     QSqlDatabase m_db;
+    bool createTables();
     bool execQuery(QSqlQuery &q, const QString &where);
 };
 

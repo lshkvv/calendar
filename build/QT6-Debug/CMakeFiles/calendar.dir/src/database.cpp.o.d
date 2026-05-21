@@ -1103,12 +1103,10 @@ CMakeFiles/calendar.dir/src/database.cpp.o: \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqlquery.h \
   /opt/homebrew/lib/QtSql.framework/Headers/QSqlError \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqlerror.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QString \
   /opt/homebrew/lib/QtCore.framework/Headers/QDate \
   /opt/homebrew/lib/QtCore.framework/Headers/qdatetime.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qcalendar.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qlocale.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QTime \
-  /opt/homebrew/lib/QtCore.framework/Headers/QList \
   /opt/homebrew/lib/QtCore.framework/Headers/QDebug \
   /opt/homebrew/lib/QtCore.framework/Headers/QVariant

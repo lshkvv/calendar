@@ -13,6 +13,7 @@ bool Database::init(const QString &dbPath)
 {
     qDebug() << "DB init path =" << dbPath;
     qDebug() << "Available SQL drivers =" << QSqlDatabase::drivers();
+    qDebug() << "QSQLITE available =" << QSqlDatabase::isDriverAvailable("QSQLITE");
 
     if (QSqlDatabase::contains("qt_sql_default_connection"))
         m_db = QSqlDatabase::database("qt_sql_default_connection");
@@ -22,20 +23,20 @@ bool Database::init(const QString &dbPath)
     m_db.setDatabaseName(dbPath);
 
     if (!m_db.open()) {
-        qDebug() << "Не удалось открыть БД";
-        qDebug() << "Driver valid:" << m_db.isValid();
-        qDebug() << "Last error:" << m_db.lastError().text();
-        qDebug() << "Database name:" << m_db.databaseName();
+        qDebug() << "OPEN DATABASE FAILED";
+        qDebug() << "Driver valid =" << m_db.isValid();
+        qDebug() << "Is open error =" << m_db.isOpenError();
+        qDebug() << "Driver text =" << m_db.lastError().driverText();
+        qDebug() << "Database text =" << m_db.lastError().databaseText();
+        qDebug() << "Full error =" << m_db.lastError().text();
+        qDebug() << "Database name =" << m_db.databaseName();
         return false;
     }
 
     QSqlQuery q(m_db);
     q.exec("PRAGMA foreign_keys = ON;");
 
-    if (!createTables())
-        return false;
-
-    return ensureEventsSchema();
+    return createTables();
 }
 
 bool Database::createTables()
@@ -80,28 +81,6 @@ bool Database::createTables()
                 "FOREIGN KEY (tag_id) REFERENCES tags(id) ON DELETE CASCADE);")) {
         qDebug() << q.lastError().text();
         return false;
-    }
-
-    return true;
-}
-
-bool Database::ensureEventsSchema()
-{
-    QSqlQuery q(m_db);
-
-    bool hasIsDone = false;
-    if (q.exec("PRAGMA table_info(events)")) {
-        while (q.next()) {
-            if (q.value("name").toString() == "is_done") {
-                hasIsDone = true;
-                break;
-            }
-        }
-    }
-
-    if (!hasIsDone) {
-        QSqlQuery alter(m_db);
-        alter.exec("ALTER TABLE events ADD COLUMN is_done INTEGER NOT NULL DEFAULT 0");
     }
 
     return true;
@@ -225,15 +204,6 @@ bool Database::deleteEvent(int id)
     q.prepare("DELETE FROM events WHERE id=:id");
     q.bindValue(":id", id);
     return execQuery(q, "deleteEvent");
-}
-
-bool Database::setEventDone(int eventId, bool done)
-{
-    QSqlQuery q(m_db);
-    q.prepare("UPDATE events SET is_done = :done WHERE id = :id");
-    q.bindValue(":done", done ? 1 : 0);
-    q.bindValue(":id", eventId);
-    return execQuery(q, "setEventDone");
 }
 
 bool Database::assignTagsToEvent(int eventId, const QList<int> &tagIds)

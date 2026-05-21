@@ -1173,15 +1173,14 @@ CMakeFiles/calendar.dir/calendar_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqlquery.h \
   /opt/homebrew/lib/QtSql.framework/Headers/QSqlError \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqlerror.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QString \
   /opt/homebrew/lib/QtCore.framework/Headers/QDate \
   /opt/homebrew/lib/QtCore.framework/Headers/qdatetime.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qcalendar.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QTime \
-  /opt/homebrew/lib/QtCore.framework/Headers/QList \
   /opt/homebrew/lib/QtCore.framework/Headers/QDebug \
   /Users/aleksalaskevich/calendar/build/QT6-Debug/calendar_autogen/UVLADIE3JM/moc_eventdialog.cpp \
   /Users/aleksalaskevich/calendar/build/QT6-Debug/calendar_autogen/UVLADIE3JM/../../../../src/eventdialog.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QList \
   /Users/aleksalaskevich/calendar/build/QT6-Debug/calendar_autogen/UVLADIE3JM/moc_mainwindow.cpp \
   /Users/aleksalaskevich/calendar/build/QT6-Debug/calendar_autogen/UVLADIE3JM/../../../../src/mainwindow.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QMainWindow \

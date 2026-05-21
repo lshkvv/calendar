@@ -84,8 +84,8 @@ clean: CMakeFiles/calendar_autogen.dir/clean
 # Target rules for target CMakeFiles/calendar.dir
 
 # All Build rule for target.
-CMakeFiles/calendar.dir/all: CMakeFiles/calendar_autogen_timestamp_deps.dir/all
 CMakeFiles/calendar.dir/all: CMakeFiles/calendar_autogen.dir/all
+CMakeFiles/calendar.dir/all: CMakeFiles/calendar_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/calendar.dir/build.make CMakeFiles/calendar.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/calendar.dir/build.make CMakeFiles/calendar.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/aleksalaskevich/calendar/build/QT6-Debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target calendar"
@@ -103,8 +103,8 @@ calendar: CMakeFiles/calendar.dir/rule
 .PHONY : calendar
 
 # codegen rule for target.
-CMakeFiles/calendar.dir/codegen: CMakeFiles/calendar_autogen_timestamp_deps.dir/all
 CMakeFiles/calendar.dir/codegen: CMakeFiles/calendar_autogen.dir/all
+CMakeFiles/calendar.dir/codegen: CMakeFiles/calendar_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/calendar.dir/build.make CMakeFiles/calendar.dir/codegen
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/aleksalaskevich/calendar/build/QT6-Debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Finished codegen for target calendar"
 .PHONY : CMakeFiles/calendar.dir/codegen

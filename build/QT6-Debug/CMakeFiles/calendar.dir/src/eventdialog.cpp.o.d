@@ -1152,7 +1152,6 @@ CMakeFiles/calendar.dir/src/eventdialog.cpp.o: \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqlquery.h \
   /opt/homebrew/lib/QtSql.framework/Headers/QSqlError \
   /opt/homebrew/lib/QtSql.framework/Headers/qsqlerror.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QString \
   /opt/homebrew/lib/QtCore.framework/Headers/QDebug \
   /Users/aleksalaskevich/calendar/build/QT6-Debug/calendar_autogen/include/ui_eventdialog.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QVariant \
